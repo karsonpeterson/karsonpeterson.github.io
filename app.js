@@ -22,7 +22,8 @@ var newUserDiv = document.querySelector("#new_user_div");
 
 var deleteGame = function (id) {
 	fetch(`https://kp-first-webapp.herokuapp.com/games/${id}`, {
-		method: 'DELETE'
+		method: 'DELETE',
+		credentials: 'include'
 	}).then(function (response) {
 		console.log("game deleted");
 		getGames();
@@ -33,6 +34,7 @@ var deleteGame = function (id) {
 var editGame = function(id, data) {
 	fetch(`https://kp-first-webapp.herokuapp.com/games/${id}`, {
 		method: 'PUT',
+		credentials: 'include'
 		body: data,
 		headers: {
 			"Content-type": "application/x-www-form-urlencoded"
@@ -46,7 +48,8 @@ var editGame = function(id, data) {
 clearAllButton.onclick = function() {
 
 	fetch("https://kp-first-webapp.herokuapp.com/games", {
-		method: 'DELETE'}
+		method: 'DELETE',
+		credentials: 'include'}
 	).then(function (response) {
 		//load new data
 		var gameList = document.querySelector("#game_table");
