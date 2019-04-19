@@ -23,7 +23,7 @@ var newUserDiv = document.querySelector("#new_user_div");
 var deleteGame = function (id) {
 	fetch(`https://kp-first-webapp.herokuapp.com/games/${id}`, {
 		method: 'DELETE',
-		credentials: 'include',
+		credentials: 'include'
 	}).then(function (response) {
 		console.log("game deleted");
 		getGames();
