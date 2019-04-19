@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+		<title>Game Table</title>
+	</head>
+	<body>
+		<h1 id="title_h1">Game Table</h1>
+		<div class="login" id="login_div">
+			<p>Username:</p>
+			<input type="text" id="username_input" name="username_input">
+			<p>Password:</p>
+			<input type="password" id="password_input" name="password_input">
+			<button id="login_button">Login</button>
+			<button id="newuser_button">New User</button>
+
+		</div>
+		<div class="new_user" id="new_user_div">
+			<p>First Name:</p>
+			<input type="text" id="first_name_input" name="first_name_input">
+			<p>Last Name:</p>
+			<input type="text" id="last_name_input" name="last_name_input">
+			<p>Username:</p>
+			<input type="text" id="new_username_input" name="new_username_input">
+			<p>Password:</p>
+			<input type="text" id="new_password_input" name="new_password_input">
+			<button id="create_user_button">Create User</button>
+		</div>
+		<div id="main_div">
+			<div class="main">
+				<p>Title: </p>
+				<input type="text" id="title_input" name="title_input">
+
+				<p>Genre: </p>
+				<input type="text" id="genre_input" name="genre_input">
+
+				<p>Console: </p>
+				<input type="text" id="console_input" name="console_input">
+			</div>
+			<div class="main">
+				<p>Rating: </p>
+				<input type="text" id="rating_input" name="rating_input">
+
+				<p>ESRB Rating: </p>
+				<input type="text" id="esrb_input" name="esrb_input">
+
+				<button id="add_button">Add</button>
+				<button id="del_all_button" class="clear">Clear All</button>
+			</div>
+			<div class="main">
+				<table id="game_table" class="gametable">
+					<tr>
+						<th>Title</th>
+						<th>Genre</th>
+						<th>Console</th>
+						<th>Rating</th>
+						<th>ESRB</th>
+						<th>---</th>
+						<th>---</th>
+					</tr>
+				</table>
+
+			</div>
+		</div>
+		<div class="edit_form" id="edit_div">
+			<p>Title:</p>
+			<input type="text" id="edit_title" name="edit_title">
+			<p>Genre:</p>
+			<input type="text" id="edit_genre" name="edit_genre">
+			<p>Console:</p>
+			<input type="text" id="edit_console" name="edit_console">
+			<button id="finish_edit_button">Make changes</button>
+			<button id="reload_button" class="reload_button">Reload info</button>
+			<p>Rating:</p>
+			<input type="text" id="edit_rating" name="edit_rating">
+			<p>ESRB:</p>
+			<input type="text" id="edit_esrb" name="edit_esrb">
+		</div>
+
+		<script src="app.js"></script>
+	</body>
+</html>

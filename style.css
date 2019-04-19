@@ -1,0 +1,195 @@
+body {
+	font-family: 'Press Start 2P', cursive; 
+	align-content: center;
+	background-image: url("pixel-world.jpg");
+}
+
+h1 {
+	font-family: 'Press Start 2P', cursive;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	justify-content: center;
+	position: center;
+	font-weight: bold;
+}
+
+p {
+	font-weight: bold;
+}
+
+.login {
+	background-color: white;
+	border: 2px solid white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	padding: 10px 10px 10px 10px;
+	align-content: center;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-left: auto;
+	display: flex;
+	min-width: 500px;
+	max-width: 800px;
+}
+
+.new_user {
+	background-color: white;
+	border: 2px solid white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	padding: 10px 10px 10px 10px;
+	align-content: center;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-left: auto;
+	display: none;
+	min-width: 500px;
+	max-width: 800px;
+}
+
+.main {
+	background-color: white;
+	border: 2px solid white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	padding: 10px 10px 10px 10px;
+	align-content: center;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-left: auto;
+	display: flex;
+	max-width: 1090px;
+}
+
+.edit_form {
+	background-color: white;
+	border: 2px solid white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	padding: 10px 10px 10px 10px;
+	align-content: center;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-left: auto;
+	display: none;
+	min-width: 500px;
+	max-width: 800px;
+
+}
+
+button {
+	background-color: #2dfc45;
+	border: none;
+	color: white;
+	border-radius: 2px;
+	text-align: center;
+	font-size: 14px;
+	margin-right: 10px;
+	margin-left: 10px;
+	opacity: 0.6;
+	transition: 0.3s;
+	text-decoration: none;
+	cursor: pointer;
+	height: auto;
+	flex: 1;
+}
+
+.reload_button {
+	background-color: #1c89ef;
+	border: none;
+	color: white;
+	border-radius: 2px;
+	text-align: center;
+	font-size: 14px;
+	margin-right: 10px;
+	margin-left: 10px;
+	opacity: 0.6;
+	transition: 0.3s;
+	text-decoration: none;
+	cursor: pointer;
+	height: auto;
+	flex: 1;
+}
+
+.clear {
+	background-color: #ED5038;
+	border: none;
+	color: white;
+	border-radius: 2px;
+	text-align: center;
+	font-size: 14px;
+	margin-right: 10px;
+	margin-left: 10px;
+	opacity: 0.6;
+	transition: 0.3s;
+	text-decoration: none;
+	cursor: pointer;
+	height: auto;
+	flex: 1;
+}
+
+
+button:hover {opacity: 1}
+
+input[type=text]{
+	margin: 8px 8px 8px 8px;
+	border-radius: 5px;
+	padding: 10px 10px 10px 10px;
+	width: 30%;
+}
+
+input[type=password]{
+	margin: 8px 8px 8px 8px;
+	border-radius: 5px;
+	padding: 10px 10px 10px 10px;
+}
+
+ul li {
+	display: block;
+	width: 700px;
+	max-width: 900px;
+	min-width: 580px;
+	word-wrap: break-word;
+}
+
+.gametable {
+	margin: auto;
+	width: 98%;
+	border-collapse: collapse;
+	border: 2px solid #fff; /*for older IE*/
+	border-style: hidden;
+}
+
+.gametable caption {
+	background-color: #f79646;
+	color: #fff;
+	font-size: x-large;
+	font-weight: bold;
+	letter-spacing: .3em;
+}
+
+.gametable thead th {
+	padding: 8px;
+	background-color: #fde9d9;
+	font-size: large;
+	font-weight: bold;
+}
+
+
+.gametable th, .gametable td {
+	padding: 3px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #4f89c6 #ccc;
+}
+
+.gametable td {
+	text-align: center;
+}
+
+.gametable tbody th {
+	text-align: center;
+	font-weight: bold;
+}
+
+tbody td:hover {
+	background-color: #f5f5f5;
+	cursor: pointer;
+}
